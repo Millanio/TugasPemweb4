@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Latihan 1</title>
+    <!-- Tag untuk memasukkan jquery ke dalam file -->
+    <script src="jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Button untuk mengeksekusi script 1 -->
+    <button type="button" id="hide1">Sembunyikan</button>
+    <button type="button" id="show1">Tampilkan</button>
+    <br>
+    <!-- Gambar yang dimasukkan 1 -->
+    <img src="img1.jpg" id="img1" alt="">
+    <br>
+    <!-- Button untuk mengeksekusi script 2 -->
+    <button type="button" id="hide2">Sembunyikan</button>
+    <button type="button" id="show2">Tampilkan</button>
+    <br>
+    <!-- Gambar yang dimasukkan 2 -->
+    <img src= "img2.jpg" img id="img2" alt="">
+    <br>
+    <!-- Script untuk menyembunyikan dan menampilkan gambar -->
+    <script type="text/javascript">
+      $("#hide1").on("click", function() {$("#img1").hide("slow")});
+      $("#show1").on("click", function() {$("#img1").show("slow")});
+      $("#hide2").on("click", function() {$("#img2").hide("slow")});
+      $("#show2").on("click", function() {$("#img2").show("slow")});
+    </script>
+  </body>
+</html>

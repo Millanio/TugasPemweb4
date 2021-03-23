@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <!-- Tag untuk memasukkan jquery ke dalam file -->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        // Script untuk mengubah warna teks menjadi merah dan background menjadi kuning
+        $("#daftar").addClass("merahkuning");
+        // Script untuk mengubah warna teks menjadi biru dan background menjadi hijau
+        $(".subdaftar").addClass("kuninghitam");});</script>
+        <style type="text/css">
+        .merahkuning {
+            color: red;
+            font-weight: bold;
+            background-color: yellow;
+            padding: 3px;
+        }
+        .kuninghitam {
+            color: blue;
+            background-color: green;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>paragraf pertama</p>
+        </div>
+        <div>
+            <!-- Teks yang akan diubah warnanya-->
+        <ul id="daftar">
+            <li>item 1</li>
+            <li class="subdaftar">item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+    </body>
+</html>
